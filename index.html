@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Vision</title>
+    <style>
+        h1 {
+            font-size: 100px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            /* Opcional, para centrar verticalmente también */
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-container h1 {
+            margin-top: 0;
+        }
+
+        .image-list-container {
+            max-height: 70vh;
+            /* Altura máxima del contenedor de imágenes */
+            overflow-y: auto;
+            /* Habilitar desplazamiento vertical */
+            width: 70vw;
+        }
+
+        .image-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .image-list li {
+
+            /* Ancho del cuadro */
+            height: 30vh;
+            /* Altura del cuadro */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            /* Borde alrededor del contenedor */
+            border-radius: 10px;
+            /* Bordes redondeados */
+            overflow: hidden;
+            /* Ocultar partes de la imagen que excedan el contenedor */
+        }
+
+        .image-list img {
+            width: 100%;
+            /* Para que la imagen se ajuste al tamaño del contenedor */
+            height: 100%;
+            /* Para que la imagen se ajuste al tamaño del contenedor */
+            object-fit: cover;
+            /* Cubrir el contenedor con la imagen */
+            border-radius: 8px;
+            /* Bordes redondeados para las imágenes */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <h1>Pagina de prueba</h1>
+            <p>Esta pagina fue diseñada solo para uso de prueba de la extension...</p>
+        </div>
+        <div class="image-list-container">
+            <ul class="image-list">
+                <li><img src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/437546927_3927187877501397_7276016633110841845_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=oikx3DjLRpsAb6NwPhJ&_nc_ht=scontent.fclo1-4.fna&oh=00_AfAvYTwLuWtK7dLeXCrJdX83OTTJhU1HBS_5fbOKBFVEvw&oe=662A3E3F"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo1-3.fna.fbcdn.net/v/t39.30808-6/435407428_3920785511474967_3922143713579310794_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=R-QO0vrfaCUAb6LQRhu&_nc_ht=scontent.fclo1-3.fna&oh=00_AfAj_v8mlqakP_bxUwqdhFCLPR30QUJLzSOLcLA4SuI4IA&oe=662A4F43"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/426422643_3881224278764424_5344371489726253157_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Y4dfFT8Qha0Ab43f3Ao&_nc_ht=scontent.fclo1-4.fna&oh=00_AfCk3utYzxr78AF1tog1klSxZsdRCwB1TDwa3UWGkHWBQQ&oe=662A58DA"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo1-3.fna.fbcdn.net/v/t39.30808-6/420631371_3866314073588778_6056228416100764676_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1t_-2pT0sgcAb74FH40&_nc_ht=scontent.fclo1-3.fna&oh=00_AfD-BxC8ZtOjqbAIMo63QL3Vn_uHDx5ootPKt_UGpBsaIQ&oe=662A2E27"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/387063879_3804864036400449_6513491877965434339_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=D_rw8MgZNA4Ab7DDjJd&_nc_ht=scontent.fclo1-4.fna&oh=00_AfAo4zdp5cWRnBbsRBBTkSPCle8F3UNov2hMAQRTS9dP4Q&oe=662A2A2F"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo1-4.fna.fbcdn.net/v/t39.30808-6/399950327_3821335278086658_8791224634911477265_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=e6Vvx05OZb0Ab50i7Fn&_nc_ht=scontent.fclo1-4.fna&oh=00_AfAXrbU6ditzmBpREuxNlh-Jff1H1rutOcDars2XA63vrw&oe=662A312C"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo1-3.fna.fbcdn.net/v/t39.30808-6/378489514_3786376088249244_4609757943234844970_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=y5qZ-ywnjeAAb6Aa6sq&_nc_ht=scontent.fclo1-3.fna&oh=00_AfCFhhTQBAIzx7XptbfW1mS8tlMlhMDBJxG88rbzAZoaGg&oe=662A50C8"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t1.6435-9/49151487_2115828445134442_306809245033037824_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEv3xnswkcaih_GGbNruavfku6UYD1FJt-S7pRgPUUm36TZ9e9ErpFwS35Z3Ba6S8yeWyEaDn5fnZgr0lQtn7jX&_nc_ohc=srt7MIdblTYAb4AUm2I&_nc_ht=scontent.fclo2-2.fna&oh=00_AfBprbRx4KCGg8mK_xKYpUhr6nL2issqMmk2zzzUl5OGiw&oe=664BD109"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t1.6435-9/117257495_152807646455666_5133550340873750401_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeExiQUe-biHB2YGefhm5P7fFzo2-FnnvRwXOjb4Wee9HOFeo7j28SO_octnuaHttY5XQM3BLWPxwuZWLORZDPxY&_nc_ohc=2rpXx6Jtus0Ab704Ftj&_nc_ht=scontent.fclo2-2.fna&oh=00_AfAWnVbre8OKbGTZcj_P5DeQ8eUCXjdUchyIaW4uZRfqYg&oe=664BDA33"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t39.30808-6/438255994_955573012675620_7591728037726428360_n.jpg?stp=dst-jpg_p180x540&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFmyhLqM9kGLtv1HjaUEMGX8CYIV87AIuTwJghXzsAi5GvApg7l9JyfrJ3c9Gxq52tIpBl8Os5q_pjxKrREXYg_&_nc_ohc=9KEIqLJnoP0Ab7NNafJ&_nc_ht=scontent.fclo2-2.fna&oh=00_AfA0uMWZ58ZTz9kZdZdCH564SS3UhrxssT5N-ogANp5cjA&oe=662A5EEC"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t39.30808-6/439520785_1971659503229073_2626452854479693432_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHDwwE0GZR3MzmDtUPzXiv9JIBIyUG9eSgkgEjJQb15KC_P3fMHuC2tsgUGICWlY-W1MGyuXaAF34IjhZvtgS_l&_nc_ohc=Yww-5iHLXHAAb4-f7r-&_nc_oc=AdjCgv9ZRxns7KDVLnLQCQBu5-yLs5l_6va4QHJRhZCYuKLg_Hp2nbuk2-GGGCiWlxY&_nc_ht=scontent.fclo2-2.fna&oh=00_AfDyA0p_a5xrlJ6-RpOG4N8B83Py2OBFVPn325IG2CdYfg&oe=662A4FAA"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t39.30808-6/436329812_300834229721182_1643841515071655442_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGPlC0a8iauMkIq2AlbWgjD9lQuEe72Iyf2VC4R7vYjJxCXmjtvlwtaL18qGbccOptugjpsmEtdy1MN0q_JmEHm&_nc_ohc=Nnkoj2LDjZsAb7qt34V&_nc_ht=scontent.fclo2-2.fna&oh=00_AfAGfHPGr_OUhwbfCnqRWG-0XB326Na_NXKU47NdZ_s7gg&oe=662A5CBA"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t39.30808-6/437930687_403299089127484_69319815886663042_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHp4cE_NbrMwPDJ9K7UCOquEZaQYYZ8bhkRlpBhhnxuGWvY2_wrdW6KTIkrR0ELIllpFOTmlv7xf9HR40MLjqta&_nc_ohc=aQGvrths6pMAb7k0xtZ&_nc_ht=scontent.fclo2-2.fna&oh=00_AfC7UeyPVA8LBnjI2ma7Rp6z1QPuWpl5mQf7yScklCJ0BQ&oe=662A5638"
+                        alt=""></li>
+                <li><img src="https://palomaynacho-1f321.kxcdn.com/wp-content/uploads/2023/01/cine-gore-the-sadness-2021.jpg"
+                        alt=""></li>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJWn_n1JcwasTSMWgCauLuCCF3hgmeMSDWmQzreQ6ng&s"
+                        alt=""></li>
+                <li><img src="https://www.gore.com.es/sites/default/files/2023-04/Bill-and-Vieve-700x574-rev_0.jpg"
+                        alt=""></li>
+                <li><img src="https://i.pinimg.com/736x/e7/77/92/e77792eeb355e33ba299e7f62bfbb2ae.jpg" alt=""></li>
+
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t1.6435-9/101703938_3211030465787913_173608616828338176_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEXRuCYSdGJfkGQjz1vc62xAjoSpi4K52wCOhKmLgrnbDCWnC5Ib7yeXuMWSpWluD8nzaINfxU1VX907o2NfSJa&_nc_ohc=rIKx_cmtK1AAb6aT0iG&_nc_ht=scontent.fclo2-2.fna&oh=00_AfCTsnP-D8KGX2VbAdS_4lWld8JJDU9VccdGvXvxCu_E6g&oe=664BEB3A"
+                        alt=""></li>
+                <li><img src="https://scontent.fclo2-2.fna.fbcdn.net/v/t39.30808-6/380272747_2400614576777032_4800955913805699057_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFo0-mlsDqawoftNyZY-yM6Z4klZ_Vc0PBniSVn9VzQ8O0GqAOpQg2_eHubWRFdLuqqVQx1KUXjyI5d9f8W_bHU&_nc_ohc=7WWGECApRmsAb5rM2zc&_nc_ht=scontent.fclo2-2.fna&oh=00_AfCFGumCeiNXLqOMLGLBpoBrJvIBlmdh5Ie2Zult8YpqMQ&oe=662A3B92" alt=""></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
